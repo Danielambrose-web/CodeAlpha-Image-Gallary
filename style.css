@@ -124,3 +124,6 @@ main {
   object-fit: cover;
   display: block;
 }
+.gallery-item.hide {
+  display: none;
+}
