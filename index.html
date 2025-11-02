@@ -5,72 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallary</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-     <section class="header">
+    <section class="header">
       <div class="title-header">
         <span class="logo"><img src="8888" alt="image-gallary" /></span>
 
         <h1>Image Gallary</h1>
       </div>
 
-
       <div class="search-filter">
-        <div class="search-bar">
+        <!-- <div class="search-bar">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" id="search-input" placeholder="Search images..." />
-        </div>
+        </div> -->
 
-        <div class="filter-options">
+        <!-- <div class="filter-options">
           <select id="filter-select">
             <option value="all">Categories Filter</option>
             <option value="nature">Nature</option>
             <option value="animals">Animals</A>
             <option value="people">People</option>
             <option value="food">Food</option>
-          </select>
+          </select> -->
+        <nav class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+          <button class="filter-btn" data-filter="people">People</button>
+          <button class="filter-btn" data-filter="food">Food</button>
+          <button class="filter-btn" data-filter="animals">Animals</button>
+          <button class="filter-btn" data-filter="others">Others</button>
+        </nav>
       </div>
     </section>
 
-
-     <main>
-        <ul class="gallery-grid">
-            <li class="gallery-item" data-category="nature">
-                <img src="imgs/nature1.jpg" alt="Misty forest">
-            </li>
-            <li class="gallery-item" data-category="people">
-                <img src="imgs/human1.jpg" alt="Portrait of a man">
-            </li>
-            <li class="gallery-item" data-category="animals">
-                <img src="imgs/animal1.jpg" alt="White rabbit">
-            </li>
-            <li class="gallery-item" data-category="food">
-                <img src="imgs/food2.jpg" alt="Healthy food bowl">
-            </li>
-            <li class="gallery-item" data-category="others">
-                <img src="imgs/others1.jpg" alt="Person listening to music">
-            </li>
-            <li class="gallery-item" data-category="people">
-                <img src="" alt="Woman in stylish clothes">
-            </li>
-
-        </ul>
+    <main>
+      <ul class="gallery-grid">
+        <li class="gallery-item" data-category="nature">
+          <img src="imgs/nature1.jpg" alt="Misty forest" />
+        </li>
+        <li class="gallery-item" data-category="people">
+          <img src="imgs/human1.jpg" alt="Portrait of a man" />
+        </li>
+        <li class="gallery-item" data-category="animals">
+          <img src="imgs/animal1.jpg" alt="White rabbit" />
+        </li>
+        <li class="gallery-item" data-category="food">
+          <img src="imgs/food2.jpg" alt="Healthy food bowl" />
+        </li>
+        <li class="gallery-item" data-category="others">
+          <img src="imgs/others1.jpg" alt="Person listening to music" />
+        </li>
+        <li class="gallery-item" data-category="people">
+          <img src="" alt="Woman in stylish clothes" />
+        </li>
+      </ul>
     </main>
 
-
-    <ul>
-      <li><a href=""></a></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div class=
-    "footer"></div>
+    <div class="footer"></div>
 
     <script src="script.j"></script>
   </body>
