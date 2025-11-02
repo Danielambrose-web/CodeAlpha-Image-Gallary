@@ -99,6 +99,9 @@
   background-color: var(--accent-color);
   color: white;
 }
+.responsive-filter-options {
+  display: none;
+}
 
 /* --- Gallery Grid --- */
 main {
@@ -126,4 +129,26 @@ main {
 }
 .gallery-item.hide {
   display: none;
+}
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .title-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .title-header h1 {
+    font-size: 2rem;
+  }
+  .search-filter {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .filter-buttons {
+    display: none;
+  }
+  .responsive-filter-options {
+    display: block;
+  }
 }
