@@ -1,8 +1,7 @@
-// This is a special event listener that waits for the entire HTML document
-// to be fully loaded and ready before running the JavaScript code inside.
-// This is crucial because if the JS runs before the buttons exist, it can't find them!
 document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll(".filter-btn");
+
+  const galleryItems = document.querySelectorAll(".gallery-item");
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -11,7 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       button.classList.add("active");
       const filterValue = button.getAttribute("data-filter");
-      console.log("Button clicked! The filter is:", filterValue);
+      galleryItems.forEach((item) => {
+        const itemCategory = item.getAttribute("data-category");
+        if (filterValue === "all" || itemCategory === filterValue) {
+
+          item.classList.remove("hide");
+        } else {
+          item.classList.add("hide");
+        }
+      }); 
     });
-  });
+  }); 
 });
