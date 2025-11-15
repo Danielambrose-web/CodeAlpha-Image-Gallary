@@ -74,12 +74,11 @@ document.querySelectorAll(".gallery-item").forEach((item) => {
   item.addEventListener("click", () => openLightbox(item));
 });
 
-// Button click events
+
 closeBtn.addEventListener("click", closeLightbox);
 nextBtn.addEventListener("click", showNextImage);
 prevBtn.addEventListener("click", showPrevImage);
 
-// Close when clicking outside image
 lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) closeLightbox();
 });

@@ -206,7 +206,6 @@ body {
   color: #b7f3c1;
 }
 
-/* ============ RESPONSIVENESS ============ */
 @media (max-width: 768px) {
   .gallery-header {
     flex-direction: column;
